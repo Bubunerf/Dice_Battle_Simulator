@@ -8,11 +8,11 @@ int dice_roll() {
     return roll_dice;
 }
 
-void display_player_health() {
-
+void display_player_health(int p1_heath, int p2_health) {
+    
 }
 
-int calculate_damage() {
+int calculate_damage(int dice1 , int dice2) {
     
 }
 
