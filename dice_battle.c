@@ -13,6 +13,8 @@ void display_player_health(int p1_heath, int p2_health) {
 }
 
 int calculate_damage(int dice1 , int dice2) {
+    int sum = dice1 + dice2;
+    return sum;
     
 }
 
@@ -26,11 +28,19 @@ int main(void) {
 
     int player1_dice1 = dice_roll();
     int player1_dice2 = dice_roll();
-    int player1_total = player1_dice1 + player1_dice2;
+    int dice_sum = calculate_damage(player1_dice1, player1_dice2);
+    
+    printf("=====Dice Battle=====\n\n");
+
+    printf("Player 1's turn!\n");
+    printf("Dice 1: %d\n" , player1_dice1);
+    printf("Dice 1: %d\n" , player1_dice2);
+    printf("Total damage: %d", dice_sum);
+
+    
 
 
-
-    printf("%d and %d the sum of this is %d" , player1_dice1 , player1_dice2, player1_total);
+    
 
 
     return 0;
