@@ -4,7 +4,7 @@
 
 int dice_roll() {
     int roll_dice;
-    roll_dice = rand() % 7 + 1; // find a random value from 1-6
+    roll_dice = rand() % 6 + 1; // find a random value from 1-6
     return roll_dice;
 }
 
@@ -19,7 +19,15 @@ int calculate_damage(int dice1 , int dice2) {
     
 }
 void check_winner(int p1_sum, int p2_sum ){
-    (p2_sum < p1_sum) ? printf("Player 1 Wins!") : printf("Player 2 Wins!");
+    if (p2_sum < p1_sum) {
+        printf("Player 2 Wins!");
+    }
+    else if (p2_sum == p1_sum) {
+        printf("It is a draw");
+    }
+    else {
+        printf("Player 1 Wins!");
+    }
 }
 
 
