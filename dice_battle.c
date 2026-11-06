@@ -20,13 +20,13 @@ int calculate_damage(int dice1 , int dice2) {
 }
 void check_winner(int p1_sum, int p2_sum ){
     if (p2_sum < p1_sum) {
-        printf("Player 2 Wins!");
+        printf("Player 1 Wins!");
     }
     else if (p2_sum == p1_sum) {
         printf("It is a draw");
     }
     else {
-        printf("Player 1 Wins!");
+        printf("Player 2 Wins!");
     }
 }
 
